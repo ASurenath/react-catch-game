@@ -134,8 +134,8 @@ function App() {
   return (
     <>
       <div className="d-flex flex-column justify-content-between align-items-center w-100" tabIndex={0} onKeyDown={handleKeyDown} style={{ height: '100vh' }}>
-        <h1 className='monoton-regular ' style={{height:'10vh'}}>Catch game</h1>
-        <div className='d-flex justify-content-evenly w-100 py-1' style={{height:'10vh'}}>
+        <h1 className='monoton-regular ' style={{height:'10%'}}>Catch game</h1>
+        <div className='d-flex justify-content-evenly w-100 py-1' style={{height:'10%'}}>
           <h1><i className="fa-solid fa-clock"></i>: {Math.floor(count * (timeStep / 1000))}s</h1>
           <h1>Score: {score}</h1>
           <Button variant='outline-dark' disabled={!gameRunning} onClick={pause}>Pause <i className="fa-solid fa-pause"></i></Button>
