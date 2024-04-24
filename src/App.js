@@ -133,7 +133,7 @@ function App() {
   }
   return (
     <>
-      <div className="d-flex flex-column justify-content-between align-items-center w-100" tabIndex={0} onKeyDown={handleKeyDown} style={{ height: '100vh' }}>
+      <div className="d-flex flex-column justify-content-between align-items-center w-100" tabIndex={0} onKeyDown={handleKeyDown} style={{ height: '100vh',overflowY:'hidden' }}>
         <h1 className='monoton-regular ' style={{height:'10%'}}>Catch game</h1>
         <div className='d-flex justify-content-evenly w-100 py-1' style={{height:'10%'}}>
           <h1><i className="fa-solid fa-clock"></i>: {Math.floor(count * (timeStep / 1000))}s</h1>
@@ -155,7 +155,7 @@ function App() {
                 : <div className='play' onClick={play} onTouchEnd={play}><h1>Play <i className="fa-solid fa-play"></i></h1></div>
             : ""}
         </div>
-        <p className='text-secondary'>Created by anagha</p>
+        <p className='text-secondary' style={{height:'5%'}}>Created by anagha</p>
       </div>
       {/* sound effects */}
       <audio ref={audioCatch}>
