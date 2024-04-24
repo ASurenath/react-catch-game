@@ -2,6 +2,7 @@
   width:500px;
   max-width: 98vw;
   height:500px;
+  max-height: 80vh;
   border:1px solid black ;
 }
 .particle{
